@@ -1,7 +1,6 @@
 'use strict';
 
-const { isTriangleRectangle } = require('./ex1.4.js');
-const { max, max3, max3v2, min3, min3v2 } = require('./ex1.5.js');
+const { isTriangleRectangle, max, max3, max3v2, min3, min3v2, tariff } = require('./chapitre-1.4-Fonctions.js');
 
 describe('chapitre 1', () => {
 
@@ -77,6 +76,14 @@ describe('chapitre 1', () => {
 
         test('Should return minimum', () => {
             expect(min3v2(-1.5, -3, 0.2) === -3).toBe(true);
+        });
+    });
+
+    describe('tarifs postaux (1.9 p22)', () => {
+        const prices = [ 2.80, 4.40, 6.70 ];
+
+        test(`Price should be include in [ ${prices} ]`, () => {
+            expect(prices).toContain(tariff(33));
         });
     });
 

@@ -119,5 +119,20 @@ function min3v2(number1, number2, number3) {
     return min( min(number1, number2), number3 );
 }
 
-module.exports = { isTriangleRectangle, max, max3, max3v2, min3, min, min3v2 };
+
+/**
+ * Return le tarif d'affranchissement d'une lettre en fonction de son poids
+ * @param {Number} weight - le poids de la lettre
+ * @return {Number} - Le tarif à appliquer
+ */
+function tariff(weight) {
+    if (weight < 20)
+        return 2.80;
+    else if (weight >= 20 && weight < 50)
+        return 4.40;
+    else
+        return 6.70;
+}
+
+module.exports = { isTriangleRectangle, max, max3, max3v2, min3, min, min3v2, tariff };
 // vim: foldmethod=syntax: foldlevel=0
