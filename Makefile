@@ -17,3 +17,5 @@ tags:
 
 tests:
 	$(NPM) run test
+
+.PHONY: all init clean tags tests

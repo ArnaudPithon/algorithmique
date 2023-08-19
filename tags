@@ -31,16 +31,18 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	6.0.0	/p6.0.20221218.0/
-carre	exercices/ex1.4.js	/^function carre (value) {$/;"	f
-compNumbers	exercices/ex1.4.js	/^function compNumbers (a, b) {$/;"	f
-isTriangleRectangle	exercices/ex1.4.js	/^function isTriangleRectangle (sides) {$/;"	f
-isTriangleRectangle	exercices/ex1.4.js	/^module.exports = { isTriangleRectangle };$/;"	M
-max	exercices/ex1.5.js	/^function max(number1, number2) {$/;"	f
-max	exercices/ex1.5.js	/^module.exports = { max, max3, max3v2 };$/;"	M
-max3	exercices/ex1.5.js	/^function max3(number1, number2, number3) {$/;"	f
-max3v2	exercices/ex1.5.js	/^function max3v2(number1, number2, number3) {$/;"	f
+carre	exercices/chapitre-1.4-Fonctions.js	/^function carre (value) {$/;"	f
+compNumbers	exercices/chapitre-1.4-Fonctions.js	/^function compNumbers (a, b) {$/;"	f
+isTriangleRectangle	exercices/chapitre-1.4-Fonctions.js	/^function isTriangleRectangle (sides) {$/;"	f
+isTriangleRectangle	exercices/chapitre-1.4-Fonctions.js	/^module.exports = { isTriangleRectangle, max, max3, max3v2, min3, min, min3v2, tariff };$/;"	M
+max	exercices/chapitre-1.4-Fonctions.js	/^function max(number1, number2) {$/;"	f
+max3	exercices/chapitre-1.4-Fonctions.js	/^function max3(number1, number2, number3) {$/;"	f
+max3v2	exercices/chapitre-1.4-Fonctions.js	/^function max3v2(number1, number2, number3) {$/;"	f
+min	exercices/chapitre-1.4-Fonctions.js	/^function min(number1, number2) {$/;"	f
+min3	exercices/chapitre-1.4-Fonctions.js	/^function min3(number1, number2, number3) {$/;"	f
+min3v2	exercices/chapitre-1.4-Fonctions.js	/^function min3v2(number1, number2, number3) {$/;"	f
 nonRectangle	exercices/exercices.test.js	/^            nonRectangle:[12, 3, 32],$/;"	p	variable:triangle
+prices	exercices/exercices.test.js	/^        const prices = [ 2.80, 4.40, 6.70 ];$/;"	v
 rectangle	exercices/exercices.test.js	/^            rectangle: [8, 10, 6],$/;"	p	variable:triangle
-result	exercices/exercices.test.js	/^            const result = isTriangleRectangle(triangle.nonRectangle);$/;"	C
-result	exercices/exercices.test.js	/^            const result = isTriangleRectangle(triangle.rectangle);$/;"	C
+tariff	exercices/chapitre-1.4-Fonctions.js	/^function tariff(weight) {$/;"	f
 triangle	exercices/exercices.test.js	/^        const triangle = {$/;"	v
