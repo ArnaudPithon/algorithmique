@@ -1,0 +1,16 @@
+{
+  "name": "initiation à l'algorithmique",
+  "version": "1.0.0",
+  "description": "transcription en javascript des exos trouvés dans le livre (voir README)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+
+  },
+  "keywords": [],
+  "author": "Arnaud Pithon",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.6.2"
+  }
+}
