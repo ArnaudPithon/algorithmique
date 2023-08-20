@@ -1,7 +1,7 @@
-NPM=pnpm
+NPM:=pnpm
+HOST:=$(shell hostname)
 
 all: tests
-
 
 package.json:
 	$(NPM) init
@@ -21,4 +21,8 @@ tests:
 docs:
 	$(NPM) run generate-docs
 
-.PHONY: all init clean tags tests
+push:
+	@pwsafe -Epq clef.ssh.id@$(HOST) | xclip -i -loop 1
+	git push
+
+.PHONY: all init clean tags tests push docs
