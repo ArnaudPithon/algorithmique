@@ -23,9 +23,9 @@ function carre (value) {
 
 /**
  * Compare deux nombres
- * @param {Number} a - un premier nombre
- * @param {Number} b - un deuxième nombre
- * @return {Number} - -1, 0 ou 1 suivant résultat de la comparaison
+ * @param {number} a - un premier nombre
+ * @param {number} b - un deuxième nombre
+ * @return {number} - -1, 0 ou 1 suivant résultat de la comparaison
  */
 function compNumbers (a, b) {
     if (a < b) return -1;
@@ -35,9 +35,9 @@ function compNumbers (a, b) {
 
 /**
  * Return maximum of two numbers
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @return {Number} - The biggest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @return {number} - The biggest number
  */
 function max(number1, number2) {
     if (number1 >= number2)
@@ -48,10 +48,10 @@ function max(number1, number2) {
 
 /**
  * Return maximum of three numbers
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @param {Number} number3 - Yet another number
- * @return {Number} - The biggest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @param {number} number3 - Yet another number
+ * @return {number} - The biggest number
  */
 function max3(number1, number2, number3) {
     if (number1 >= number2) {
@@ -67,10 +67,10 @@ function max3(number1, number2, number3) {
 
 /**
  * Return maximum of three numbers by using max function
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @param {Number} number3 - Yet another number
- * @return {Number} - The biggest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @param {number} number3 - Yet another number
+ * @return {number} - The biggest number
  */
 function max3v2(number1, number2, number3) {
     return max( max(number1, number2), number3 );
@@ -78,9 +78,9 @@ function max3v2(number1, number2, number3) {
 
 /**
  * Return minimum of two numbers
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @return {Number} - The smallest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @return {number} - The smallest number
  */
 function min(number1, number2) {
     if (number1 <= number2)
@@ -91,10 +91,10 @@ function min(number1, number2) {
 
 /**
  * Return minimum of three numbers
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @param {Number} number3 - Yet another number
- * @return {Number} - The smallest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @param {number} number3 - Yet another number
+ * @return {number} - The smallest number
  */
 function min3(number1, number2, number3) {
     if (number1 <= number2) {
@@ -110,10 +110,10 @@ function min3(number1, number2, number3) {
 
 /**
  * Return minimum of three numbers by using min function
- * @param {Number} number1 - A number
- * @param {Number} number2 - Another number
- * @param {Number} number3 - Yet another number
- * @return {Number} - The smallest number
+ * @param {number} number1 - A number
+ * @param {number} number2 - Another number
+ * @param {number} number3 - Yet another number
+ * @return {number} - The smallest number
  */
 function min3v2(number1, number2, number3) {
     return min( min(number1, number2), number3 );
@@ -122,8 +122,8 @@ function min3v2(number1, number2, number3) {
 
 /**
  * Return le tarif d'affranchissement d'une lettre en fonction de son poids
- * @param {Number} weight - le poids de la lettre
- * @return {Number} - Le tarif à appliquer
+ * @param {number} weight - le poids de la lettre
+ * @return {number} - Le tarif à appliquer
  */
 function tariff(weight) {
     if (weight < 20)
