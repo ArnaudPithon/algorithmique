@@ -4,13 +4,13 @@
   "description": "transcription en javascript des exos trouvés dans le livre (voir README)",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-
+    "test": "jest --coverage"
   },
   "keywords": [],
   "author": "Arnaud Pithon",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^29.6.2"
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "swagger-jsdoc": "^6.2.8"
   }
 }

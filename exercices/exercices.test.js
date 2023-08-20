@@ -1,6 +1,6 @@
 'use strict';
 
-const { isTriangleRectangle, max, max3, max3v2, min3, min3v2, tariff } = require('./chapitre-1.4-Fonctions.js');
+const { isTriangleRectangle, compNumbers, max, max3, max3v2, min3, min3v2, tariff } = require('./chapitre-1.4-Fonctions.js');
 
 describe('chapitre 1', () => {
 
@@ -9,67 +9,54 @@ describe('chapitre 1', () => {
             nonRectangle:[12, 3, 32],
             rectangle: [8, 10, 6],
         }
-        test('Should return false', () => {
+        test('Should return true or false', () => {
             expect( isTriangleRectangle(triangle.nonRectangle) )
                 .toBe(false);
-        });
-        test('Should return true', () => {
             expect( isTriangleRectangle(triangle.rectangle) )
                 .toBe(true);
         });
     });
 
-    describe('max (1.5 p21)', () => {
-
-        test('Should return a number', () => {
-            expect(typeof max(3, 9)).toBe('number');
+    describe('compNumbers (1.4 p21)', () => {
+        test('Should see an egality', () => {
+            expect(compNumbers(3, 3)).toBe(0);
         });
+    });
 
-        test('Should return maximum', () => {
+    describe('max (1.5 p21)', () => {
+        test('max should return maximum of two numbers', () => {
+            expect(typeof max(3, 9)).toBe('number');
             expect(max(-1.5, -3)).toBe(-1.5);
         });
     });
 
     describe('max3 (1.6 p21)', () => {
-
-        test('Should return a number', () => {
+        test('max3 should return maximum of three numbers', () => {
+            expect(max3(2, 2, 1)).toBe(2);
             expect(typeof max3(3.03, 9, -1)).toBe('number');
-        });
-
-        test('Should return maximum', () => {
             expect(max3(-1.5, -3, 0.2)).toBe(0.2);
+            expect(max3(-5, -3, 0.2)).toBe(0.2);
         });
     });
 
     describe('max3v2 (1.7 p21)', () => {
-
-        test('Should return a number', () => {
+        test('max3v2 should return maximum of three numbers', () => {
             expect(typeof max3v2(3.03, 9, -1)).toBe('number');
-        });
-
-        test('Should return maximum', () => {
             expect(max3v2(-1.5, -3, 0.2)).toBe(0.2);
         });
     });
 
     describe('min3 (1.8 p22)', () => {
-
-        test('Should return a number', () => {
-            expect(typeof min3(3.03, 9, -1)).toBe('number');
-        });
-
-        test('Should return minimum', () => {
-            expect(min3(-1.5, -3, 0.2)).toBe(-3);
+        test('min3 should return minimum of three numbers', () => {
+            expect( min3(1, 2, 3) ).toBe(1);
+            expect( min3(2, 1, 3) ).toBe(1);
+            expect( min3(3, 2, 1) ).toBe(1);
+            expect( min3(2, 3, 1) ).toBe(1);
         });
     });
 
     describe('min3v2 (1.8 p22)', () => {
-
-        test('Should return a number', () => {
-            expect(typeof min3v2(3.03, 9, -1)).toBe('number');
-        });
-
-        test('Should return minimum', () => {
+        test('min3v2 should return minimum of three numbers', () => {
             expect(min3v2(-1.5, -3, 0.2)).toBe(-3);
         });
     });
@@ -77,8 +64,10 @@ describe('chapitre 1', () => {
     describe('tarifs postaux (1.9 p22)', () => {
         const prices = [ 2.80, 4.40, 6.70 ];
 
-        test(`Price should be include in [ ${prices} ]`, () => {
-            expect(prices).toContain(tariff(33));
+        test(`Tariffs should be include in [ ${prices} ]`, () => {
+            expect(prices).toContain( tariff(19) );
+            expect(prices).toContain( tariff(20) );
+            expect(prices).toContain( tariff(50) );
         });
     });
 

@@ -34,7 +34,7 @@
 carre	exercices/chapitre-1.4-Fonctions.js	/^function carre (value) {$/;"	f
 compNumbers	exercices/chapitre-1.4-Fonctions.js	/^function compNumbers (a, b) {$/;"	f
 isTriangleRectangle	exercices/chapitre-1.4-Fonctions.js	/^function isTriangleRectangle (sides) {$/;"	f
-isTriangleRectangle	exercices/chapitre-1.4-Fonctions.js	/^module.exports = { isTriangleRectangle, max, max3, max3v2, min3, min, min3v2, tariff };$/;"	M
+isTriangleRectangle	exercices/chapitre-1.4-Fonctions.js	/^module.exports = { isTriangleRectangle, compNumbers, max, max3, max3v2, min3, min, min3v2, tarif/;"	M
 max	exercices/chapitre-1.4-Fonctions.js	/^function max(number1, number2) {$/;"	f
 max3	exercices/chapitre-1.4-Fonctions.js	/^function max3(number1, number2, number3) {$/;"	f
 max3v2	exercices/chapitre-1.4-Fonctions.js	/^function max3v2(number1, number2, number3) {$/;"	f

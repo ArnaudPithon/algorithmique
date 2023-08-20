@@ -134,5 +134,5 @@ function tariff(weight) {
         return 6.70;
 }
 
-module.exports = { isTriangleRectangle, max, max3, max3v2, min3, min, min3v2, tariff };
+module.exports = { isTriangleRectangle, compNumbers, max, max3, max3v2, min3, min, min3v2, tariff };
 // vim: foldmethod=syntax: foldlevel=0
