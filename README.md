@@ -4,7 +4,7 @@
 
 Mise en application des exercices trouvés dans le livre
 «Initiation à l'algorithmique et aux structures de données Volume 1 (2ᵉ édition)»
-de Jacques Courtin et Irène Kowarski [1](https://www.dunod.com/sciences-techniques/initiation-algorithmique-et-aux-structures-donnees-0)
+de Jacques Courtin et Irène Kowarski [(1)](https://www.dunod.com/sciences-techniques/initiation-algorithmique-et-aux-structures-donnees-0)
 
 Les transcriptions des algorithmes sont effectuées en javascript, pour l'instant.
 Je m'applique à écrire des tests validants les résultats au fur et à mesure.

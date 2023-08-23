@@ -1,6 +1,7 @@
 'use strict';
 
 const { isTriangleRectangle, compNumbers, max, max3, max3v2, min3, min3v2, tariff } = require('./chapitre-1.4-Fonctions.js');
+const { getSquare, square } = require('./chapitre-1.5.js');
 
 describe('chapitre 1', () => {
 
@@ -68,6 +69,30 @@ describe('chapitre 1', () => {
             expect(prices).toContain( tariff(19) );
             expect(prices).toContain( tariff(20) );
             expect(prices).toContain( tariff(50) );
+        });
+    });
+
+    describe('getSquare, teste si un nombre est un carré parfait (1.10 p23)', () => {
+        test('Should return false', () => {
+            expect( getSquare(-1).perfectSquare ).toBe(false);
+        });
+        test('Should return false and 1', () => {
+            expect( getSquare(3).perfectSquare ).toBe(false);
+            expect( getSquare(3).root ).toBe(1);
+        });
+        test('Should return true and the square root of 4', () => {
+            expect( getSquare(4).perfectSquare ).toBe(true);
+            expect( getSquare(4).root ).toBe(2);
+        });
+    });
+
+    describe('square (1.11 p23)', () => {
+        test('Should return square root', () => {
+            expect( square(3) ).toBe(1);
+            expect( square(4) ).toBe(2);
+        });
+        test.failing('Should return an error message', () => {
+            expect( typeof square(-1) ).toBe('integer');
         });
     });
 
